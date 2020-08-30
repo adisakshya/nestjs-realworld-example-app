@@ -4,6 +4,8 @@
   "description": "[![Build Status](https://travis-ci.org/anishkny/node-express-realworld-example-app.svg?branch=master)](https://travis-ci.org/anishkny/node-express-realworld-example-app)",
   "main": "index.js",
   "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "nest build",
     "start": "node index.js",
     "start:watch": "nodemon",
     "prestart:prod": "tsc",
@@ -37,8 +39,8 @@
     "crypto": "^1.0.1",
     "crypto-js": "^4.0.0",
     "jsonwebtoken": "^8.5.1",
-    "mysql": "^2.18.1",
     "passport-jwt": "^4.0.0",
+    "pg": "^8.3.3",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^6.5.5",
     "slug": "^1.1.0",
